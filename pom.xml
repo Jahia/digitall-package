@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    ==========================================================================================
+    =                            JAHIA'S ENTERPRISE DISTRIBUTION                             =
+    ==========================================================================================
+
+                                     http://www.jahia.com
+
+    JAHIA'S ENTERPRISE DISTRIBUTIONS LICENSING - IMPORTANT INFORMATION
+    ==========================================================================================
+
+        Copyright (C) 2002-2019 Jahia Solutions Group. All rights reserved.
+
+        This file is part of a Jahia's Enterprise Distribution.
+
+        Jahia's Enterprise Distributions must be used in accordance with the terms
+        contained in the Jahia Solutions Group Terms & Conditions as well as
+        the Jahia Sustainable Enterprise License (JSEL).
+
+        For questions regarding licensing, support, production usage...
+        please contact our team at sales@jahia.com or go to http://www.jahia.com/license.
+
+    ==========================================================================================
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>jahia-packages-parent</artifactId>
+        <groupId>org.jahia.packages</groupId>
+        <version>7.2.3.2</version>
+    </parent>
+    <artifactId>digitall-package</artifactId>
+    <name>Digitall Package</name>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <description>Parent project to package all Digitall related components.</description>
+    <properties>
+        <jahia.package.assembly.file>src/main/assembly/digitall-package.xml</jahia.package.assembly.file>
+        <jahia.package.sources.assembly.file>src/main/assembly/digitall-package-sources.xml</jahia.package.sources.assembly.file>
+        <jahia.final.package.name>digitall-package</jahia.final.package.name>
+        <jahia.manifest.package.id>digitall-package</jahia.manifest.package.id>
+        <jahia.manifest.license>org.jahia.core</jahia.manifest.license>
+    </properties>
+    <scm>
+        <connection>scm:git:git@github.com:Jahia/digitall-package.git</connection>
+        <url>https://github.com/Jahia/digitall-package.git</url>
+        <developerConnection>scm:git:git@github.com:Jahia/digitall-package.git</developerConnection>
+      <tag>HEAD</tag>
+    </scm>
+    <repositories>
+        <repository>
+            <id>jahia-public</id>
+            <name>Jahia Public Repository</name>
+            <url>https://devtools.jahia.com/nexus/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>jahia-enterprise</id>
+            <name>Jahia Public Repository</name>
+            <url>https://devtools.jahia.com/nexus/content/groups/enterprise</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <dependencies>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>digitall</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>dx-base-demo-components</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>dx-base-demo-core</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>dx-base-demo-templates</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>bookmarks</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>event</artifactId>
+            <version>2.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>rating</artifactId>
+            <version>2.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>topstories</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>location</artifactId>
+            <version>2.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>bootstrap3-components</artifactId>
+            <version>3.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>bootstrap3-core</artifactId>
+            <version>3.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>calendar</artifactId>
+            <version>2.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>calendar</artifactId>
+            <version>2.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>font-awesome</artifactId>
+            <version>4.7.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>news</artifactId>
+            <version>2.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>person</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>press</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
