@@ -34,7 +34,7 @@
     <artifactId>digitall-package</artifactId>
     <name>Digitall Package</name>
     <version>2.2.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <description>Parent project to package all Digitall related components.</description>
     <properties>
         <jahia.package.assembly.file>src/main/assembly/digitall-package.xml</jahia.package.assembly.file>
